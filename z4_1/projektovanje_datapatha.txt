@@ -1,0 +1,49 @@
+PROMENJIVE:
+
+op, res, one
+
+STANJA:
+	- idle:
+		op = x, res = 0, one = 1 << 30
+	
+	- s1:
+		op = op, res = res, one = one
+		
+	- s2:
+		op = op, res = res, one = one
+	
+	- shift:
+		op = op, res = res, one = one >> 2
+	
+	- calc:
+		op = op - (res + one), res = (res + one << 1) >> 1, one = one >> 2
+	
+	- s3:
+		op = op, res = res >> 1, one = one >> 2
+
+
+STANJE POJEDINACNI REGISTARA:
+
+	- op
+	idle	op = x
+	s1		op = op
+	s2		op = op
+	shift	op = op
+	calc	op = op - (res + one)
+	s3		op = op
+	
+	- res
+	idle	res = 0
+	s1		res = res
+	s2		res = res
+	shift	res = res
+	calc	res = (res + one << 1) >> 1
+	s3		res = res >> 1
+	
+	- one
+	idle	one = 1 << 30
+	s1		one = one
+	s2		one = one
+	shift	one = one >> 2
+	calc	one = one >> 2
+	s3		one = one >> 2

@@ -1,0 +1,1 @@
+-wto "8d25acf52e7e4bd39b3cab6453d0903b" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "kvadratni_koren_tb_behav" "xil_defaultlib.kvadratni_koren_tb" -log "elaborate.log" 

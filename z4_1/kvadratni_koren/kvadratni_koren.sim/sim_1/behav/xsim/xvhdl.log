@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/PSDS/z4_1/kvadratni_koren/kvadratni_koren.srcs/sources_1/new/kvadratni_koren_top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'kvadratni_koren_top'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/PSDS/z4_1/kvadratni_koren/kvadratni_koren.srcs/sim_1/new/kvadratni_koren_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'kvadratni_koren_tb'

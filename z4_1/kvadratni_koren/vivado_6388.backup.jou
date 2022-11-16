@@ -1,0 +1,57 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Nov  6 19:28:40 2022
+# Process ID: 6388
+# Current directory: C:/Users/david/Documents/PSDS/z4_1/kvadratni_koren
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12720 C:\Users\david\Documents\PSDS\z4_1\kvadratni_koren\kvadratni_koren.xpr
+# Log file: C:/Users/david/Documents/PSDS/z4_1/kvadratni_koren/vivado.log
+# Journal file: C:/Users/david/Documents/PSDS/z4_1/kvadratni_koren\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/david/Documents/PSDS/z4_1/kvadratni_koren/kvadratni_koren.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+file mkdir C:/Users/david/Documents/PSDS/z4_1/kvadratni_koren/kvadratni_koren.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/david/Documents/PSDS/z4_1/kvadratni_koren/kvadratni_koren.srcs/sim_1/new/kvadratni_koren_tb.vhd w ]
+add_files -fileset sim_1 C:/Users/david/Documents/PSDS/z4_1/kvadratni_koren/kvadratni_koren.srcs/sim_1/new/kvadratni_koren_tb.vhd
+update_compile_order -fileset sim_1
+launch_simulation
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+source kvadratni_koren_tb.tcl
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ms
+run all
+close_sim
+launch_simulation
+source kvadratni_koren_tb.tcl
+run 500 ms
+run 500 us
+run 500 us
+run 50 ms
+run 50 ms
+run 50 ms
+run 50 ms
+run 50 ms
+run 1 s
+close_sim
+close_project

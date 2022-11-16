@@ -1,0 +1,93 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Nov  9 18:47:51 2022
+# Process ID: 4296
+# Current directory: D:/PSDS/z4_1/kvadratni_koren
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5472 D:\PSDS\z4_1\kvadratni_koren\kvadratni_koren.xpr
+# Log file: D:/PSDS/z4_1/kvadratni_koren/vivado.log
+# Journal file: D:/PSDS/z4_1/kvadratni_koren\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/PSDS/z4_1/kvadratni_koren/kvadratni_koren.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+source kvadratni_koren_tb.tcl
+close_sim
+close_project
+create_project deljenje D:/PSDS/z4_2/deljenje -part xc7z010clg400-1
+set_property board_part digilentinc.com:zybo:part0:2.0 [current_project]
+set_property target_language VHDL [current_project]
+file mkdir D:/PSDS/z4_2/deljenje/deljenje.srcs/sources_1/new
+close [ open D:/PSDS/z4_2/deljenje/deljenje.srcs/sources_1/new/deljenje_top.vhd w ]
+add_files D:/PSDS/z4_2/deljenje/deljenje.srcs/sources_1/new/deljenje_top.vhd
+update_compile_order -fileset sources_1
+close_project
+open_project D:/PSDS/z4_1/kvadratni_koren/kvadratni_koren.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source kvadratni_koren_tb.tcl
+run 500 ms
+close_sim
+launch_simulation
+source kvadratni_koren_tb.tcl
+run 500 ms
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 3
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 3
+wait_on_run synth_1
+close_project
+open_project D:/PSDS/z4_2/deljenje/deljenje.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 3
+wait_on_run synth_1
+file mkdir D:/PSDS/z4_2/deljenje/deljenje.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/PSDS/z4_2/deljenje/deljenje.srcs/sim_1/new/deljenje_tb.vhd w ]
+add_files -fileset sim_1 D:/PSDS/z4_2/deljenje/deljenje.srcs/sim_1/new/deljenje_tb.vhd
+update_compile_order -fileset sim_1
+launch_simulation
+update_compile_order -fileset sim_1
+launch_simulation
+source deljenje_tb.tcl
+run 500 ms
+restart
+run 500 ms
+run 500 ms
+run 500 ms
+restart
+run 500 ms
+run 500 ms
+close_sim
+launch_simulation
+source deljenje_tb.tcl
+run 500 ms
+run 500 ms
+restart
+run 500 ms
+run 500 ms
+close_sim
+launch_simulation
+source deljenje_tb.tcl
+run 500 ms
+run 500 ms
+run 500 ms
+restart
+run all
+restart
+run 500 ms
+run 500 ms
+restart
+run 500 ms
+run 500 ms
+run 500 ms
+save_wave_config {D:/PSDS/z4_2/deljenje/deljenje_tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse D:/PSDS/z4_2/deljenje/deljenje_tb_behav.wcfg
+set_property xsim.view D:/PSDS/z4_2/deljenje/deljenje_tb_behav.wcfg [get_filesets sim_1]
+close_sim

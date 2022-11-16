@@ -1,0 +1,42 @@
+GENERIC:
+
+WIDTH	-	integer	:= 32
+
+
+ULAZNI INTERFEJS:
+
+x	-	in	STD_LOGIC_VECTOR(WIDTH-1 downto 0)
+
+
+IZLAZNI INTERFEJS:
+
+res_out	-	out	STD_LOGIC_VECTOR(WIDTH-1 downto 0)
+
+
+KONTROLNI INTERFEJS:
+
+start	-	in	STD_LOGIC
+clk		-	in	STD_LOGIC
+reset	-	in	STD_LOGIC
+
+
+STATUSNI INTERFEJS:
+
+ready	-	out	STD_LOGIC
+
+
+PROMENJIVE:
+
+op		-	signal	STD_LOGIC_VECTOR(WIDTH-1 downto 0)
+res		-	signal	STD_LOGIC_VECTOR(WIDTH-1 downto 0)
+one		-	signal	STD_LOGIC_VECTOR(WIDTH-1 downto 0)
+
+
+STANJA:
+
+idle
+s1
+shift
+s2
+calc
+s3
