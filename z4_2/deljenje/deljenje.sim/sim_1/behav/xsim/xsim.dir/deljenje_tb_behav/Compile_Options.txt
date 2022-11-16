@@ -1,0 +1,1 @@
+-wto "5ae3328f271b454daa915faac3c6297b" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "deljenje_tb_behav" "xil_defaultlib.deljenje_tb" -log "elaborate.log" 

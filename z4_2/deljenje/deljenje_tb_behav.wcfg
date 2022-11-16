@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="deljenje_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="deljenje_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="1500000000001fs"></ZoomEndTime>
+      <Cursor1Time time="1228965517241fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="204"></NameColumnWidth>
+      <ValueColumnWidth column_width="99"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="13" />
+   <wvobject fp_name="/deljenje_tb/s_a_in" type="array">
+      <obj_property name="ElementShortName">s_a_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">s_a_in[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deljenje_tb/s_b_in" type="array">
+      <obj_property name="ElementShortName">s_b_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">s_b_in[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deljenje_tb/s_r_out" type="array">
+      <obj_property name="ElementShortName">s_r_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">s_r_out[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deljenje_tb/s_clk" type="logic">
+      <obj_property name="ElementShortName">s_clk</obj_property>
+      <obj_property name="ObjectShortName">s_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deljenje_tb/s_reset" type="logic">
+      <obj_property name="ElementShortName">s_reset</obj_property>
+      <obj_property name="ObjectShortName">s_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deljenje_tb/s_ready" type="logic">
+      <obj_property name="ElementShortName">s_ready</obj_property>
+      <obj_property name="ObjectShortName">s_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deljenje_tb/s_start" type="logic">
+      <obj_property name="ElementShortName">s_start</obj_property>
+      <obj_property name="ObjectShortName">s_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deljenje_tb/WIDTH" type="other">
+      <obj_property name="ElementShortName">WIDTH</obj_property>
+      <obj_property name="ObjectShortName">WIDTH</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deljenje_tb/top/state_reg" type="other">
+      <obj_property name="ElementShortName">state_reg</obj_property>
+      <obj_property name="ObjectShortName">state_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deljenje_tb/top/q_reg" type="array">
+      <obj_property name="ElementShortName">q_reg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">q_reg[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deljenje_tb/top/r_reg" type="array">
+      <obj_property name="ElementShortName">r_reg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">r_reg[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deljenje_tb/top/op1_reg" type="array">
+      <obj_property name="ElementShortName">op1_reg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">op1_reg[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deljenje_tb/top/op2_reg" type="array">
+      <obj_property name="ElementShortName">op2_reg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">op2_reg[7:0]</obj_property>
+   </wvobject>
+</wave_config>

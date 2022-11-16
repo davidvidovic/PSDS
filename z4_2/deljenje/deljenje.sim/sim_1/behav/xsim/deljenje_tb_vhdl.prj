@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../deljenje.srcs/sources_1/new/deljenje_top.vhd" \
+"../../../../deljenje.srcs/sim_1/new/deljenje_tb.vhd" \
+
+# Do not sort compile order
+nosort
